@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Marco Trento | Engineering Physicist"
+  description="Personal portfolio of Marco Trento, Engineering Physics graduate interested in physics, mathematics, scientific computing, and advanced technology."
+  active="home"
+>
+  <section class="hero">
+    <div class="hero-copy reveal">
+      <div class="hero-eyebrow">Engineering Physics Graduate</div>
+      <h1><span id="home-typewriter" class="typewriter" data-text={`Marco Trento\nEngineering Physicist`}>Marco Trento<br />Engineering Physicist</span></h1>
+      <p>
+        I graduated in Engineering Physics on <strong>March 26, 2026</strong>.
+        I am interested in physics, mathematics, programming, scientific computing, and advanced technology,
+        with a strong motivation for analytical problem-solving.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/about">Read About Me</a>
+        <a class="btn btn-ghost" href="/blog">Explore Articles</a>
+        <a class="btn btn-ghost" href="/contact">Contact</a>
+      </div>
+    </div>
+
+    <aside class="hero-card reveal">
+      <div class="hero-memoji">
+        <img src="/assets/IMG_2940.jpeg" alt="Avatar portrait of Marco Trento" />
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item"><span>Current Focus</span><strong>Scientific Computing</strong></div>
+        <div class="meta-item"><span>Interests</span><strong>Physics · Math · Tech</strong></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section reveal">
+    <h2>Quick Links</h2>
+    <div class="grid-cards">
+      <a class="card" href="https://www.linkedin.com/in/marco-trento" target="_blank" rel="noopener noreferrer">
+        <h3>LinkedIn</h3>
+        <p>Professional profile and latest updates.</p>
+      </a>
+      <a class="card" href="https://github.com/marco-trento" target="_blank" rel="noopener noreferrer">
+        <h3>GitHub</h3>
+        <p>Code, experiments, and technical work.</p>
+      </a>
+      <a class="card" href="mailto:trento.marco23@gmail.com">
+        <h3>Email</h3>
+        <p>trento.marco23@gmail.com</p>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
