@@ -16,6 +16,9 @@ const { title, description, active } = Astro.props;
     <style>
       html, body { background: #06090f; color: #e8eef9; }
     </style>
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
