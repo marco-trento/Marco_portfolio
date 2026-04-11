@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const basePath = import.meta.env.BASE_URL;
 ---
 <BaseLayout
   title="Marco Trento | Engineering Physicist"
@@ -16,15 +18,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         with a strong motivation for analytical problem-solving.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="/about">Read About Me</a>
-        <a class="btn btn-ghost" href="/blog">Explore Articles</a>
-        <a class="btn btn-ghost" href="/contact">Contact</a>
+        <a class="btn btn-primary" href={`${basePath}about`}>Read About Me</a>
+        <a class="btn btn-ghost" href={`${basePath}blog`}>Explore Articles</a>
+        <a class="btn btn-ghost" href={`${basePath}contact`}>Contact</a>
       </div>
     </div>
 
     <aside class="hero-card reveal">
       <div class="hero-memoji">
-        <img src="/assets/IMG_2940.jpeg" alt="Avatar portrait of Marco Trento" />
+        <img src={`${basePath}assets/IMG_2940.jpeg`} alt="Avatar portrait of Marco Trento" />
       </div>
       <div class="hero-meta">
         <div class="meta-item"><span>Current Focus</span><strong>Scientific Computing</strong></div>

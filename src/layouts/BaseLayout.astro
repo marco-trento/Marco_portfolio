@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { title, description, active } = Astro.props;
+const basePath = import.meta.env.BASE_URL;
 ---
 <!doctype html>
 <html lang="en">
@@ -24,18 +25,18 @@ const { title, description, active } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href={`${basePath}css/styles.css`} />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="/">Marco Trento</a>
+        <a class="brand" href={basePath}>Marco Trento</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
         <nav class="site-nav" aria-label="Main navigation">
-          <a class:list={[active === 'home' && 'active']} href="/">Home</a>
-          <a class:list={[active === 'about' && 'active']} href="/about">About</a>
-          <a class:list={[active === 'blog' && 'active']} href="/blog">Blog / Articles</a>
-          <a class:list={[active === 'contact' && 'active']} href="/contact">Contact</a>
+          <a class:list={[active === 'home' && 'active']} href={basePath}>Home</a>
+          <a class:list={[active === 'about' && 'active']} href={`${basePath}about`}>About</a>
+          <a class:list={[active === 'blog' && 'active']} href={`${basePath}blog`}>Blog / Articles</a>
+          <a class:list={[active === 'contact' && 'active']} href={`${basePath}contact`}>Contact</a>
         </nav>
       </div>
     </header>
@@ -49,6 +50,6 @@ const { title, description, active } = Astro.props;
     <footer class="site-footer">
       <div class="container">© 2026 Marco Trento.</div>
     </footer>
-    <script is:inline src="/js/main.js"></script>
+    <script is:inline src={`${basePath}js/main.js`}></script>
   </body>
 </html>
