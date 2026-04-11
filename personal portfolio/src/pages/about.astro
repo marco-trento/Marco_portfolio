@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="About | Marco Trento"
+  description="About Marco Trento, Engineering Physics graduate with interests in physics, mathematics, scientific computing, and advanced technology."
+  active="about"
+>
+  <section class="section reveal" style="margin-top:0;">
+    <h2>About</h2>
+    <p class="page-intro">
+      I am Marco Trento, an Engineering Physics graduate from Politecnico di Milano
+      (<strong>March 26, 2026</strong>, <strong>110L</strong>). My path is driven by curiosity and rigor:
+      physics, mathematics, computation, photonics, spectroscopy, and scientific problem-solving.
+      I am also deeply interested in economics and geopolitics as complex systems shaped by constraints and strategy.
+    </p>
+  </section>
+
+  <section class="section reveal">
+    <h2>Journey Map</h2>
+    <div class="journey-explorer reveal" id="journey-explorer">
+      <div class="journey-map" aria-label="Interactive journey map of Marco Trento">
+        <svg class="journey-lines" viewBox="0 0 1200 620" preserveAspectRatio="none" aria-hidden="true">
+          <path class="route-base" d="M120 430 C210 360, 270 285, 340 300 S392 332, 434 333 S612 265, 700 265 S880 300, 1030 245" />
+          <path class="route-seg" data-seg="1" d="M120 430 C210 360, 270 285, 340 300" />
+          <path class="route-seg" data-seg="2" d="M340 300 C380 312, 405 334, 434 333" />
+          <path class="route-seg" data-seg="3" d="M434 333 C525 332, 610 265, 700 265" />
+          <path class="route-seg" data-seg="4" d="M700 265 C840 290, 920 285, 1030 245" />
+          <path class="route-seg route-satellite" data-seg="5" d="M695 260 C730 175, 790 130, 860 130" />
+        </svg>
+
+        <button
+          class="map-node map-node-down"
+          type="button"
+          style="--x: 10%; --y: 69%; --cap-y: 10px;"
+          data-node="0"
+          data-segments="1"
+          data-title="Early Scientific Grounding"
+          data-location="Rome"
+          data-date="2019-2020"
+          data-body="Early academic growth was shaped by mathematics, physics, chemistry, and informatics competitions. Regional-level results and 1st place in the Chemistry Games in Lazio strengthened both discipline and curiosity."
+        >
+          <span class="node-core"></span>
+          <span class="node-caption">2019-2020 · Rome</span>
+        </button>
+
+        <button
+          class="map-node map-node-up"
+          type="button"
+          style="--x: 28.3%; --y: 48.4%; --cap-x: -14px; --cap-y: -4px;"
+          data-node="1"
+          data-segments="1"
+          data-title="Foundations in Engineering Physics"
+          data-location="Milan"
+          data-date="2020-2023"
+          data-body="Bachelor studies at Politecnico di Milano built a rigorous base across physics, mathematics, and computation. The thesis focused on multimodal nonlinear optical microscopy for metabolic regulation in cancer cells."
+        >
+          <span class="node-core"></span>
+          <span class="node-caption">2020-2023 · Milan</span>
+        </button>
+
+        <button
+          class="map-node map-node-down"
+          type="button"
+          style="--x: 36.2%; --y: 53.7%; --cap-x: 16px; --cap-y: 8px;"
+          data-node="2"
+          data-segments="1,2"
+          data-title="Teaching as Scientific Practice"
+          data-location="Milan"
+          data-date="2021-2023"
+          data-body="Parallel tutoring in mathematics and physics at GoStudent refined clarity of thought and communication. Guiding students through scientific reasoning reinforced strong fundamentals."
+        >
+          <span class="node-core"></span>
+          <span class="node-caption">2021-2023 · Milan</span>
+        </button>
+
+        <button
+          class="map-node map-node-up"
+          type="button"
+          style="--x: 58.3%; --y: 42.8%; --cap-x: 18px; --cap-y: -10px;"
+          data-node="3"
+          data-segments="1,2,3"
+          data-title="Advanced Specialization"
+          data-location="Milan"
+          data-date="2023-March 2026"
+          data-body="The Master in Engineering Physics at Politecnico di Milano deepened technical maturity with strong academic performance, including advanced work in Semiconductor Photonics and Advanced Topics in Engineering Physics."
+        >
+          <span class="node-core"></span>
+          <span class="node-caption">2023-Mar 2026 · Milan</span>
+        </button>
+
+        <button
+          class="map-node map-node-down"
+          type="button"
+          style="--x: 85.8%; --y: 39.6%; --cap-y: 10px;"
+          data-node="4"
+          data-segments="1,2,3,4"
+          data-title="Experimental and Computational Research"
+          data-location="Grenoble"
+          data-date="Sep 2025-Feb 2026"
+          data-body="At ESRF, the internship combined inelastic X-ray scattering experiments, spectroscopy data analysis, and quantum/electronic structure simulations using tools such as Quantum ESPRESSO and Yambo."
+        >
+          <span class="node-core"></span>
+          <span class="node-caption">Sep 2025-Feb 2026 · Grenoble</span>
+        </button>
+
+        <button
+          class="map-node map-node-satellite map-node-up"
+          type="button"
+          style="--x: 71.6%; --y: 21%; --cap-x: 14px; --cap-y: 2px;"
+          data-node="5"
+          data-segments="1,2,3,5"
+          data-title="Self-Driven Global Learning"
+          data-location="Online / Global"
+          data-date="Ongoing"
+          data-body="Independent learning extends the formal path through CS50 Intro to AI, CS50 Python, and SQL/DataCamp. This node represents continuous curiosity beyond institutional boundaries."
+        >
+          <span class="node-core"></span>
+          <span class="node-caption">Ongoing · Online</span>
+        </button>
+
+        <div class="map-time-axis" aria-hidden="true">
+          <span>2019</span>
+          <span>2020</span>
+          <span>2021</span>
+          <span>2023</span>
+          <span>2026</span>
+        </div>
+      </div>
+
+      <aside class="journey-panel">
+        <p class="journey-kicker">Selected Chapter</p>
+        <h3 id="journey-title">Experimental and Computational Research</h3>
+        <p class="journey-meta">
+          <span id="journey-location">Grenoble</span>
+          <span>·</span>
+          <span id="journey-date">Sep 2025-Feb 2026</span>
+        </p>
+        <p id="journey-body">
+          At ESRF, the internship combined inelastic X-ray scattering experiments, spectroscopy data analysis,
+          and quantum/electronic structure simulations using tools such as Quantum ESPRESSO and Yambo.
+        </p>
+
+        <div class="journey-step-list" id="journey-step-list">
+          <button class="step-chip" type="button" data-target="0">Rome</button>
+          <button class="step-chip" type="button" data-target="1">Bachelor</button>
+          <button class="step-chip" type="button" data-target="2">Tutor</button>
+          <button class="step-chip" type="button" data-target="3">Master</button>
+          <button class="step-chip" type="button" data-target="4">ESRF</button>
+          <button class="step-chip" type="button" data-target="5">Online</button>
+        </div>
+      </aside>
+    </div>
+
+    <p class="page-intro journey-closing">
+      I am building a profile where theory, computation, and experimentation converge: an analytical mindset applied
+      to complex scientific and technological challenges.
+    </p>
+  </section>
+</BaseLayout>
