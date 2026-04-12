@@ -105,6 +105,7 @@ img {
   color: var(--text);
   border-radius: 10px;
   padding: 0.35rem 0.5rem;
+  cursor: pointer;
 }
 
 .site-nav {
@@ -126,6 +127,15 @@ img {
 .site-nav a.active {
   color: var(--text);
   background: rgba(98, 208, 195, 0.13);
+}
+
+.nav-toggle:focus-visible,
+.btn:focus-visible,
+.card:focus-visible,
+.contact-card:focus-visible,
+.step-chip:focus-visible {
+  outline: 2px solid rgba(98, 208, 195, 0.9);
+  outline-offset: 2px;
 }
 
 .site-nav a::after {
@@ -457,6 +467,7 @@ main {
 
 .contact-detail strong {
   font-weight: 500;
+  overflow-wrap: anywhere;
 }
 
 .site-footer {
@@ -724,6 +735,22 @@ main {
   margin-top: 1rem;
 }
 
+.empty-state {
+  border: 1px solid rgba(154, 168, 191, 0.16);
+  border-radius: var(--radius);
+  background: rgba(15, 22, 34, 0.7);
+  padding: 1.1rem;
+}
+
+.empty-state h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.empty-state p {
+  margin: 0.5rem 0 0;
+}
+
 @keyframes pulseNode {
   0%,
   100% {
@@ -831,6 +858,10 @@ main {
     pointer-events: none;
     transition: 0.2s ease;
     flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    width: 100%;
   }
 
   .site-nav.open {
