@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const basePath = import.meta.env.BASE_URL;
+const normalizedBasePath = basePath.endsWith('/') ? basePath : `${basePath}/`;
+const cvPath = `${normalizedBasePath}assets/Marco_Trento_CV.pdf`;
 ---
 <BaseLayout
   title="Marco Trento | Engineering Physicist"
@@ -20,6 +22,7 @@ const basePath = import.meta.env.BASE_URL;
       <div class="cta-row">
         <a class="btn btn-primary" href={`${basePath}/about`}>Read About Me</a>
         <a class="btn btn-ghost" href={`${basePath}/blog`}>Explore Articles</a>
+        <a class="btn btn-ghost" href={cvPath} target="_blank" rel="noopener noreferrer">View CV</a>
         <a class="btn btn-ghost" href={`${basePath}/contact`}>Contact</a>
       </div>
     </div>
@@ -49,6 +52,10 @@ const basePath = import.meta.env.BASE_URL;
       <a class="card" href="mailto:trento.marco23@gmail.com">
         <h3>Email</h3>
         <p>trento.marco23@gmail.com</p>
+      </a>
+      <a class="card" href={cvPath} target="_blank" rel="noopener noreferrer">
+        <h3>CV</h3>
+        <p>View or download my curriculum vitae.</p>
       </a>
     </div>
   </section>
