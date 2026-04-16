@@ -25,7 +25,7 @@ const formatDate = (date: Date) =>
 
     <div class="post-list" style="margin-top: 1.1rem;">
       {posts.map((post) => (
-        <a class="post-item" href={`${basePath}blog/${post.id}`}>
+        <a class="post-item" href={`${basePath}/blog/${post.id}`}>
           <h3>{post.data.title}</h3>
           <div class="post-meta">
             <span>{formatDate(post.data.date)}</span>
