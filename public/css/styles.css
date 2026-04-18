@@ -171,6 +171,60 @@ main {
   max-width: 62ch;
 }
 
+.life-milestones {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4rem;
+  display: grid;
+  gap: 0.8rem;
+  max-width: 64ch;
+}
+
+.milestone-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.72rem 0.85rem;
+  border: 1px solid rgba(154, 168, 191, 0.2);
+  border-radius: 14px;
+  background: rgba(15, 22, 34, 0.75);
+}
+
+.milestone-card img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(191, 205, 232, 0.35);
+  padding: 0.15rem;
+}
+
+.milestone-card h3 {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.25;
+}
+
+.milestone-card p {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  color: #b9c7dd;
+}
+
+.milestone-polimi h3 {
+  color: #d7dffd;
+}
+
+.milestone-esrf h3 {
+  color: #7fe4ff;
+}
+
+.milestone-gostudent h3 {
+  color: #c9c2ff;
+}
+
 .hero-eyebrow {
   display: inline-flex;
   gap: 0.5rem;
