@@ -19,7 +19,6 @@ npm run preview
 ## Structure
 
 - `src/pages/index.astro` -> Home
-- `src/pages/about.astro` -> About (interactive journey map)
 - `src/pages/blog/index.astro` -> Blog listing
 - `src/pages/blog/[slug].astro` -> Blog article page
 - `src/pages/contact.astro` -> Contact
