@@ -1,11 +1,84 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="120" viewBox="0 0 160 120" role="img" aria-labelledby="title desc">
-  <title id="title">ESRF logo badge</title>
-  <desc id="desc">Stylized ESRF logo badge with orbital rings.</desc>
-  <rect width="160" height="120" rx="24" fill="#0a2f5f"/>
-  <ellipse cx="48" cy="58" rx="24" ry="10" fill="none" stroke="#80d3ff" stroke-width="3"/>
-  <ellipse cx="48" cy="58" rx="24" ry="10" transform="rotate(55 48 58)" fill="none" stroke="#54f2d6" stroke-width="3"/>
-  <ellipse cx="48" cy="58" rx="24" ry="10" transform="rotate(-55 48 58)" fill="none" stroke="#9dc6ff" stroke-width="3"/>
-  <circle cx="48" cy="58" r="4.5" fill="#54f2d6"/>
-  <text x="88" y="56" font-size="36" font-weight="800" font-family="'Segoe UI', Arial, sans-serif" fill="#f2f8ff">ESRF</text>
-  <text x="88" y="76" font-size="11" font-family="'Segoe UI', Arial, sans-serif" fill="#b6d4ff">Grenoble</text>
+  <title id="title">Improved ESRF logo badge</title>
+  <desc id="desc">Stylized ESRF logo badge with luminous orbital rings and refined typography.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b356b"/>
+      <stop offset="100%" stop-color="#071f42"/>
+    </linearGradient>
+
+    <linearGradient id="ring1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9be7ff"/>
+      <stop offset="100%" stop-color="#4fc3ff"/>
+    </linearGradient>
+
+    <linearGradient id="ring2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7dffe7"/>
+      <stop offset="100%" stop-color="#3fe0c6"/>
+    </linearGradient>
+
+    <linearGradient id="ring3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c6d9ff"/>
+      <stop offset="100%" stop-color="#89b4ff"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#021224" flood-opacity="0.45"/>
+    </filter>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9affef"/>
+      <stop offset="100%" stop-color="#43d8c1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="160" height="120" rx="24" fill="url(#bg)"/>
+
+  <!-- Subtle inner highlight -->
+  <rect x="2" y="2" width="156" height="116" rx="22" fill="none" stroke="rgba(255,255,255,0.08)"/>
+
+  <!-- Left emblem -->
+  <g transform="translate(0 1)" filter="url(#shadow)">
+    <ellipse cx="46" cy="58" rx="25" ry="10.5"
+             fill="none" stroke="url(#ring1)" stroke-width="3.2" stroke-linecap="round"
+             filter="url(#softGlow)"/>
+    <ellipse cx="46" cy="58" rx="25" ry="10.5"
+             transform="rotate(60 46 58)"
+             fill="none" stroke="url(#ring2)" stroke-width="3.2" stroke-linecap="round"
+             filter="url(#softGlow)"/>
+    <ellipse cx="46" cy="58" rx="25" ry="10.5"
+             transform="rotate(-60 46 58)"
+             fill="none" stroke="url(#ring3)" stroke-width="3.2" stroke-linecap="round"
+             filter="url(#softGlow)"/>
+
+    <circle cx="46" cy="58" r="5" fill="url(#coreGlow)"/>
+    <circle cx="46" cy="58" r="9" fill="none" stroke="rgba(132,255,232,0.18)" stroke-width="2"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g filter="url(#shadow)">
+    <text x="82" y="58"
+          font-size="34"
+          font-weight="800"
+          letter-spacing="0.6"
+          font-family="Inter, Segoe UI, Arial, sans-serif"
+          fill="#f4f9ff">ESRF</text>
+
+    <text x="83" y="77"
+          font-size="11"
+          font-weight="600"
+          letter-spacing="1.4"
+          font-family="Inter, Segoe UI, Arial, sans-serif"
+          fill="#b7d6ff">GRENOBLE</text>
+  </g>
 </svg>
