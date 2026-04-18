@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120" viewBox="0 0 160 120" role="img" aria-labelledby="title desc">
+  <title id="title">ESRF logo badge</title>
+  <desc id="desc">Stylized ESRF logo badge with orbital rings.</desc>
+  <rect width="160" height="120" rx="24" fill="#0a2f5f"/>
+  <ellipse cx="48" cy="58" rx="24" ry="10" fill="none" stroke="#80d3ff" stroke-width="3"/>
+  <ellipse cx="48" cy="58" rx="24" ry="10" transform="rotate(55 48 58)" fill="none" stroke="#54f2d6" stroke-width="3"/>
+  <ellipse cx="48" cy="58" rx="24" ry="10" transform="rotate(-55 48 58)" fill="none" stroke="#9dc6ff" stroke-width="3"/>
+  <circle cx="48" cy="58" r="4.5" fill="#54f2d6"/>
+  <text x="88" y="56" font-size="36" font-weight="800" font-family="'Segoe UI', Arial, sans-serif" fill="#f2f8ff">ESRF</text>
+  <text x="88" y="76" font-size="11" font-family="'Segoe UI', Arial, sans-serif" fill="#b6d4ff">Grenoble</text>
+</svg>

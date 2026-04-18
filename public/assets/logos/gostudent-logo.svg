@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120" viewBox="0 0 160 120" role="img" aria-labelledby="title desc">
+  <title id="title">GoStudent logo badge</title>
+  <desc id="desc">Stylized GoStudent logo badge.</desc>
+  <rect width="160" height="120" rx="24" fill="#5b4fff"/>
+  <circle cx="36" cy="58" r="17" fill="#ffffff" opacity="0.95"/>
+  <path d="M31 58h10" stroke="#5b4fff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M35 53l6 5-6 5" fill="none" stroke="#5b4fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="58" font-size="27" font-weight="700" font-family="'Segoe UI', Arial, sans-serif" fill="#ffffff">Go</text>
+  <text x="62" y="82" font-size="22" font-weight="700" font-family="'Segoe UI', Arial, sans-serif" fill="#d9d5ff">Student</text>
+</svg>
