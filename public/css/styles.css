@@ -164,7 +164,9 @@ main {
   margin: 0;
   letter-spacing: -0.02em;
 }
-
+.footer-highlight {
+  color: #2563eb;
+}
 .hero-copy p {
   color: var(--muted);
   margin: 1rem 0 1.25rem;
