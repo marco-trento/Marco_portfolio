@@ -22,6 +22,13 @@ const basePath = import.meta.env.BASE_URL;
         </span>
       </h1>
 
+      <div class="hero-memoji">
+        <img
+          src={`${basePath}/assets/IMG_2940.jpeg`}
+          alt="Portrait of Marco Trento"
+        />
+      </div>
+
       <p>
         I graduated in Engineering Physics on <strong>March 26, 2026</strong>.
         I am interested in physics, mathematics, programming, scientific computing,
@@ -91,15 +98,6 @@ const basePath = import.meta.env.BASE_URL;
         <a class="btn btn-ghost" href={`${basePath}/contact`}>Contact</a>
       </div>
     </div>
-
-    <aside class="hero-card reveal">
-      <div class="hero-memoji">
-        <img
-          src={`${basePath}/assets/IMG_2940.jpeg`}
-          alt="Portrait of Marco Trento"
-        />
-      </div>
-    </aside>
   </section>
 
   <section class="section reveal">
@@ -142,64 +140,3 @@ const basePath = import.meta.env.BASE_URL;
     </div>
   </section>
 </BaseLayout>
-
-<style>
-  .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
-    gap: 2.5rem;
-    align-items: start;
-  }
-
-  .hero-copy {
-    min-width: 0;
-  }
-
-  .life-milestones {
-    display: grid;
-    gap: 1rem;
-    margin: 1.75rem 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .hero-card {
-    align-self: center;
-    justify-self: center;
-    margin-top: 0;
-  }
-
-  .hero-memoji {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-memoji img {
-    display: block;
-    width: 280px;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.16);
-  }
-
-  @media (max-width: 900px) {
-    .hero {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .hero-card {
-      order: -1;
-      align-self: start;
-      justify-self: start;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-memoji img {
-      width: 220px;
-    }
-  }
-</style>
