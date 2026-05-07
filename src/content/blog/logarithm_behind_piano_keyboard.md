@@ -17,7 +17,9 @@ Each semitone is obtained by multiplying the previous frequency by $2^{1/12}$.
 
 For example, a very pleasant musical ratio is **3/2**. To find how many piano steps correspond to this ratio, we solve:
 
-$$3/2 = 2^{k/12} \longrightarrow k = 12 \cdot log_21.5 \approx 7$$
+$$
+\frac{3}{2} = 2^{k/12} \longrightarrow k = 12 \cdot \log_2(1.5) \approx 7
+$$
 
 That means a perfect fifth is about **7 semitones** above the starting note.
 
