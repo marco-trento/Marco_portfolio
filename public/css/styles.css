@@ -458,6 +458,18 @@ main {
   color: #c4e8e3;
 }
 
+.reader-content mjx-container {
+  color: #edf7ff;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding: 0.15rem 0;
+}
+
+.reader-content mjx-container[display="true"] {
+  margin: 1.1rem 0;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
