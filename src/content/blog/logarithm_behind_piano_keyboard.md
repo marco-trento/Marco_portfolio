@@ -1,4 +1,8 @@
-# The Logarithm Behind the Piano Keyboard
+---
+title: "The Logarithm Behind the Piano Keyboard"
+description: "A light explanation of how logarithms appear in music and piano tuning."
+date: 2026-05-07
+---
 Logarithms were introduced to make products and divisions easier, but they also show up in many unexpected places: images, sound, and even music.
 
 Take the piano keyboard. When you play, it does not really matter which key you start from: the structure still works. This is thanks to **equal temperament**, the system used to divide an octave into 12 equal steps.
