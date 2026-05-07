@@ -1,7 +1,7 @@
 ---
 title: "The Logarithm Behind the Piano Keyboard"
 description: "A light explanation of how logarithms appear in music and piano tuning."
-date: 07-05-2026
+date: 2026-05-07
 ---
 Logarithms were introduced to make products and divisions easier, but they also show up in many unexpected places: images, sound, and even music.
 
