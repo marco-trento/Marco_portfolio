@@ -25,5 +25,14 @@ $$
 That means a perfect fifth is about **7 semitones** above the starting note.
 
 **Behind a nice chord, there is also a little logarithm doing its job.**
-![Piano keyboard showing octave spacing](piano.webp)
+<img 
+  src="/piano.webp" 
+  alt="Piano keyboard showing octave spacing"
+  class="piano-img"
+/>
+.piano-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
 
